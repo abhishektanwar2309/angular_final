@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-
-  myEvent(evt: any){
-    console.warn(evt);
-  };
+  name= 'Abhishek Tanwar';
+  disabledBox=true;
+  enableBox(){
+    this.disabledBox=false;
+  }
 }

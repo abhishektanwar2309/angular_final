@@ -1,15 +1,13 @@
-<h1>Call function in Amgular</h1>
-<button (click)="myEvent('click event')">Click Me</button>
+<h1>Property Binding</h1>
+<!-- <input type="text" disabled value="hello"/>
 <br><br>
-<input type="text" #box1 (keyup)="myEvent(box1.value)" />
+<input type="text" disabled value={{name}}/>
 <br><br>
-<input type="text" #box2 (keyup.enter)="myEvent(box2.value)" />
-<br><br>
-<input type="text" #box3 (blur)="myEvent(box3.value)" />
-<br><br>
-<div style="background-color: skyblue;" 
-(mouseover)="myEvent('Mouse is in')"> Mouse Events</div>
-<br><br>
-<div style="background-color: red;" 
-(mouseleave)="myEvent('Mouse is out')"> Mouse Events</div>
+<input type="text" [value]="name"/>
+<br><br> -->
 
+<input type="text" [disabled]=disabledBox value={{name}}/>
+<br><br>
+<input type="text" disabled={{disabledBox}} [value]="name"/>
+<br><br>
+<button (click)="enableBox()">Enable Me</button>
