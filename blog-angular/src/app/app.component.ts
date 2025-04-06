@@ -6,19 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog-angular';
-  appName = 'Blog App';
-  name='Abhishek Tanwar';
-  getName(){
-    return this.name;
-  };
-  obj={
-    name:'peter',
-    age:30
-  };
-  arr=['one','two','three'];
-  a=100;
-  b=200;
-  siteUrl=window.location.href;
+  title = 'blog';
 
+  myEvent(evt: any){
+    console.warn(evt);
+  };
 }
