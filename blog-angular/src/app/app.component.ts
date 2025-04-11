@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  // show=true;
-  // show='yes';
-  show='red';
+  color="red"
 
 }
